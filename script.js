@@ -77,6 +77,7 @@ for (let index = 0; index < Object.keys(food).length; index++) {
   // Loops through each item in the current category array and prints its name
   for (let item = 0; item < itemsArray.length; item++) {
     console.log(itemsArray[item].name);
+    
     const foodNames = document.createElement("li");
     foodNames.textContent = `Navn: ${itemsArray[item].name}. Farge: ${itemsArray[item].color}`;
     foodList.appendChild(foodNames);
