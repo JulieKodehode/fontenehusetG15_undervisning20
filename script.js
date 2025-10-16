@@ -15,6 +15,16 @@ console.log(disneyCharacters);
 console.log(disneyCharacters[4]);
 console.log(disneyCharacters[4].name);
 
+const list = document.querySelector("#list");
+
+// Mest relevant for oppgaven
+for (let index = 0; index < disneyCharacters.length; index++) {
+  console.log(disneyCharacters[index].name);
+  const listItem = document.createElement("li");
+  listItem.textContent = `Name: ${disneyCharacters[index].name}. Type: ${disneyCharacters[index].type}`
+  list.appendChild(listItem);
+};
+
 /*disneyCharacters.type = "Duck";
 disneyCharacters.name = "Onkel Skrue";
 console.log(disneyCharacters);*/
@@ -48,10 +58,19 @@ const food = {
     { name: "Blackberry", color: "black" },
     { name: "Cloudberry", color: "orange" },
   ],
+};
 
-}
-console.log(food)
-console.log(food.vegetables[0].name, food.vegetables[1].name, food.vegetables[3].name, food.vegetables[4].name)
+console.log(food);
+console.log(food.vegetables[0].name, food.vegetables[1].name, food.vegetables[3].name, food.vegetables[4].name);
+
+for (let index = 0; index < food.vegetables.length; index++) {
+  console.log(food.vegetables[index].name);
+} 
+
+console.log(food.length);
+/*for (let index = 0; index < food.entries; index++) {
+  console.log(food[index]);
+};*/
 
 /*food.vegetables.push({ name: "Peach" });
 console.log(food);*/
