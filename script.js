@@ -20,6 +20,7 @@ disneyCharacters.name = "Onkel Skrue";
 console.log(disneyCharacters);*/
 
 //
+console.log("-----------------------------------------------");
 //
 
 // Object with array (Object nested array)
@@ -31,6 +32,7 @@ const food = {
     { name: "Potato", color: "brown" },
     { name: "Cucumber", color: "green" },
   ],
+
   fruits: [
     { name: "Apple", color: "red" },
     { name: "Banana", color: "yellow" },
@@ -38,6 +40,7 @@ const food = {
     { name: "Pear", color: "green" },
     { name: "Mango", color: "orange" },
   ],
+
   berries: [
     { name: "Strawberry", color: "red" },
     { name: "Blueberry", color: "blue" },
@@ -45,19 +48,39 @@ const food = {
     { name: "Blackberry", color: "black" },
     { name: "Cloudberry", color: "orange" },
   ],
-};
-console.log(food);
-console.log(
-  food.vegetables[0].name,
-  food.vegetables[1].name,
-  food.vegetables[3].name,
-  food.vegetables[4].name
-);
+
+}
+console.log(food)
+console.log(food.vegetables[0].name, food.vegetables[1].name, food.vegetables[3].name, food.vegetables[4].name)
 
 /*food.vegetables.push({ name: "Peach" });
 console.log(food);*/
 
 //
+console.log("-----------------------------------------------");
 //
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers);
+
+for (let index = 0; index < numbers.length; index++) {
+  console.log(numbers[index]);
+}
+
+//
+console.log("-----------------------------------------------");
+//
+
+// For loop
+
+// index : i
+// index++ : index = index + 1 eller index =+ 1
+for (let index = 0; index <= 10; index++) {
+  console.log(`Opptelling: ${index}`);
+};
+
+// index-- : index = index - 1
+// index er 10, om index er større eller samme som 0 ta index - 1 til index til vi når
+for (let index = 10; index >= 0; index--) {
+  console.log(`Nedtelling: ${index}`);
+};
