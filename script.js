@@ -63,14 +63,21 @@ const food = {
 console.log(food);
 console.log(food.vegetables[0].name, food.vegetables[1].name, food.vegetables[3].name, food.vegetables[4].name);
 
+// Gets one of the objects inside food
 for (let index = 0; index < food.vegetables.length; index++) {
   console.log(food.vegetables[index].name);
 } 
 
-console.log(food.length);
-/*for (let index = 0; index < food.entries; index++) {
-  console.log(food[index]);
-};*/
+// Loops through each category in food (vegetables, fruits, berries)
+// Object.keys gets an array of an object's keys
+for (let index = 0; index < Object.keys(food).length; index++) {
+  const itemsArray = food[Object.keys(food)[index]];
+
+  // Loops through each item in the current category array and prints its name
+  for (let item = 0; item < itemsArray.length; item++) {
+    console.log(itemsArray[item].name);
+  }
+}
 
 /*food.vegetables.push({ name: "Peach" });
 console.log(food);*/
